@@ -4,8 +4,7 @@ import { AppService } from "./app.service";
 import { ConfigModule } from "@nestjs/config";
 import { GamesModule } from "./games/games.module";
 import { HealthModule } from "./health/health.module";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const Joi = require("Joi");
+import * as Joi from 'joi'
 
 @Module({
   imports: [
