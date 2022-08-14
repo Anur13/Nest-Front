@@ -43,4 +43,10 @@ describe('AppController (e2e)', () => {
       .get('/games/getBySlug?slug=nonsensenonsense')
       .expect(400);
   });
+
+    it('/games/getBySlug', () => {
+        return request(app.getHttpServer())
+            .get('/games/getBySlug?slu')
+            .expect(400);
+    });
 });

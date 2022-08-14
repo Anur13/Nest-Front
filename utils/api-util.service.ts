@@ -12,7 +12,7 @@ export class ApiUtilService {
 
   async getAll() {
     try {
-      return await axios.get(`https://api.rawg.io/api/games?key=${this.API_KEY}`);
+      return await axios.get(`https://api.rawg.io/api/games?key=${this.API_KEY}&page_size=20`);
     } catch (e) {
       throw new BadRequestException(e);
     }
