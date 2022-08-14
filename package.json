@@ -1,21 +1,25 @@
 {
   "name": "front",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://Anur13.github.io/Nest-Front",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@types/react-star-rating-component": "^1.4.1",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "modern-normalize": "^1.0.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.2"
+    "react-scripts": "4.0.2",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
