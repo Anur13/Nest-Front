@@ -1,14 +1,14 @@
-
 export interface GamesModel {
   count: number;
   next: string;
   previous: string;
-  result: [
+  results: [
     {
-    slug: string;
-      name: string
+      slug: string;
+      name: string;
       released: string;
       rating: string;
-      background_image:string;
-  }]
+      background_image: string;
+    },
+  ];
 }

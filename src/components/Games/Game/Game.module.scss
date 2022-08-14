@@ -1,0 +1,35 @@
+.gameTitle {
+  font-size: 3vw;
+  margin-bottom: 10px;
+  min-height: 40%;
+}
+
+.gameWrapper {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  min-height: 20%;
+}
+
+.gameWrapper:hover {
+  cursor: pointer;
+}
+
+.gameWrapper:not(:last-child) {
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
+
+.textWrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamePoster {
+  max-height: 46%;
+  min-height: 46%;
+
+  min-width: 100%;
+}

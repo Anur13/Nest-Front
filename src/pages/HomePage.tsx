@@ -1,9 +1,13 @@
-import { Games } from '../components/games';
+import { Games } from '../components/Games/Games';
+import React from 'react';
+import { SearchForm } from '../components/SearchForm/SearchForm';
 
-
-export const  HomePage:React.FC = () => {
-  return (<>
+export const HomePage: React.FC = () => {
+  return (
+    <>
       <h1>Welcome to game reviews</h1>
-      <Games/>
-  </>)
-}
+      <SearchForm />
+      <Games />
+    </>
+  );
+};
